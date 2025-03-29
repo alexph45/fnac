@@ -44,6 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
+    <link rel="icon" type="image/gif" href="../images/fnac.png" />
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -66,7 +67,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <button type="submit" class="connexion-btn">Se connecter</button>
         </form>
 
-        <a href="index.php" class="home-link">Retour à l'accueil</a>
         <a href="inscription.php" class="home-link">Pas de compte ? Inscription</a>
     </div>
 </body>

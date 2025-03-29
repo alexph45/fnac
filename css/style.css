@@ -178,3 +178,57 @@ footer {
 .home-link:hover {
     color: #ebb300;  /* Change la couleur au survol */
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td {
+    color: #333;
+}
+
+table thead {
+    background-color: #ebb300;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+table th {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
