@@ -1,0 +1,180 @@
+/* Styles de base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    padding-top: 60px; /* Ajouté pour éviter que le contenu ne soit caché sous le header fixe */
+}
+
+h1, h3, h4 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #161616;
+    text-align: center;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+/* Conteneur principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; /* Augmenter l'espace entre le texte et la barre de navigation */
+    width: 100%; /* Assurer que le header occupe toute la largeur */
+    position: fixed; /* Fixer la barre de navigation en haut de la page */
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Pour que la barre de navigation soit toujours au-dessus du contenu */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrer les éléments de navigation */
+    align-items: center; /* Centrer verticalement les éléments */
+    width: 100%;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ebb300;
+    padding: 12px 20px; /* Moins d'espace autour du texte */
+    border-radius: 15px; /* Arrondi plus léger */
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #c29503;
+    transform: translateY(-3px);
+}
+
+/* Formulaire */
+form {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555;
+}
+
+select, input[type="text"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+select:focus, input:focus {
+    border-color: #ebb300;
+    outline: none;
+}
+
+/* Boutons */
+input[type="submit"], input[type="reset"], .connexion-btn {
+    background-color: #ebb300;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, .connexion-btn:hover {
+    background-color: #c29503;
+    transform: translateY(-3px);
+}
+
+/* Messages d'erreur / succès */
+.error-message, .success-message {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #ebb300;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+.home-link {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.home-link:hover {
+    color: #ebb300;  /* Change la couleur au survol */
+}
